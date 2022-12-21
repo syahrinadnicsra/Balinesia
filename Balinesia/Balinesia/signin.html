@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head lang="en" dir="ltr">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/signin.css">
+    <title>Formulir Pendaftaran</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Sign In
+        </div>
+        <form action="#">
+            <div class="field">
+                <input type="text" required>
+                <label>Masukkan Email</label>
+            </div>
+            <div class="field">
+                <input type="password" id="inputPassword" required>
+                <label>Masukkan Password</label>
+            </div>
+
+            <div class="content">
+                <input type="checkbox" onclick="myFunction()">Tampilkan Password
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("inputPassword");
+                        if (x.type === "password") {
+                            x.type = "text";
+                        } else {
+                            x.type = "password";
+                        }
+                    }
+                </script>
+                <div class="pass-link">
+                    <a href="#">Lupa Password?</a>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="submit">
+                    <input type="submit" value="Login">
+                </div>
+            </div>
+            <div class="signup-link">
+                Belum Menjadi Anggota?<a href="signup.php">Daftar Sekarang</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
